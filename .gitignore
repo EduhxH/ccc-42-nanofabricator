@@ -1,0 +1,10 @@
+# Contest material belongs to Cloudflight: keep it local
+in_level-*.txt
+*.pdf
+sandbox-*.html
+*.zip
+
+# Generated
+__pycache__/
+*.pkl
+/out_level-*.txt
