@@ -12,10 +12,10 @@
 [![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)](https://numpy.org/)
 [![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)](https://nodejs.org/)
 
-*My solution to **Nanofabricator**, the 4-hour, six-level puzzle of the 42nd Classic Cloudflight Coding Contest — and my first hackathon. Level 6 is an optimization level: write the shortest programs that make a laser fabricator build a list of patterns. This repository took the score from **72,936 to 17,436** lines.*
+*My solution to **Nanofabricator**, the 4-hour, six-level puzzle of the 42nd Classic Cloudflight Coding Contest — and my first hackathon. Level 6 is an optimization level: write the shortest programs that make a laser fabricator build a list of patterns. Starting from a 72,936-line baseline, I finished **6th with 15,826 points**.*
 
 [![Result](https://img.shields.io/badge/Result-6th%20place%20·%20solo-FFD500?style=for-the-badge)]()
-[![Level 6](https://img.shields.io/badge/Level%206-17,436%20lines-2ea043?style=for-the-badge)]()
+[![Final score](https://img.shields.io/badge/Final%20score-15,826-2ea043?style=for-the-badge)]()
 
 </div>
 
@@ -26,7 +26,7 @@
 > It was my first hackathon. Most of the level 6 work happened in the last two hours, as a race of measuring, optimizing and re-submitting.
 
 > [!NOTE]
-> **About the numbers.** The outputs in [`outputs/`](outputs/) were produced entirely by the code in this repository and total **17,436** lines. They were verified with the contest's own simulation engine, with zero failed patterns. The final leaderboard score was 15,826: in the last minutes I swapped in some outputs shared by a friend, which are not part of this repository.
+> **About the final score.** The final result of **15,826** came from working together with friends during the contest: I helped them with their code and parts of my code were incorporated into theirs. My final medium and large submissions came from that shared work. The outputs in [`outputs/`](outputs/) are the ones produced by this repository's code alone. They total 17,436 lines and pass the contest's own simulation engine with zero failed patterns.
 
 ---
 
@@ -135,7 +135,8 @@ Every number below is the level 6 total (medium + large + enormous). Each step w
 | 6 | Seeded noise, best of several runs | 22,182 |
 | 7 | **2-step lookahead** + **copy ping-pong** | 19,165 |
 | 8 | **Beam search** | 18,347 |
-| 9 | Wider beam, more seeds | **17,436** |
+| 9 | Wider beam, more seeds (this repository's outputs) | 17,436 |
+| 10 | **Final submission**, combined with friends' work (see note above) | **15,826** |
 
 ### 1 · Chord stamps
 
@@ -257,7 +258,7 @@ patterns 190 programs 190 failures 0 lines 5756
 | enormous | 140 | 21,390 | **5,227** | −76% |
 | **Total** | **540** | **72,936** | **17,436** | **−76%** |
 
-All three outputs pass the official engine with **0 failed patterns**.
+These are the outputs in [`outputs/`](outputs/), produced by this code. All three pass the official engine with **0 failed patterns**. The final leaderboard score was **15,826**, with the medium and large submissions coming from the shared work with friends described at the top.
 
 ---
 
@@ -309,7 +310,7 @@ ccc-42-nanofabricator/
 ├── level6_optimizer.py    # Level 6 pipeline: vectorised greedy, beam search, ping-pong, multiprocessing
 ├── tools/
 │   └── grade.js           # Runs the official engine (extracted from the sandbox) over an output file
-├── outputs/               # Final level 6 outputs (17,436 lines, 0 failures)
+├── outputs/               # Level 6 outputs produced by this code (17,436 lines, 0 failures)
 ├── assets/                # Logos
 └── requirements.txt       # numpy
 ```
